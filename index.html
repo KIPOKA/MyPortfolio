@@ -1,0 +1,328 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katabe Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ad78bb0d17.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.jpeg" class="logo" />
+          <ul id="menuId">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">My projects</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+
+            <i class="fas fa-times" id="close" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="wrapper">
+          <div class="static-txt">I'm a</div>
+          <ul class="dynamic-txts">
+            <li><span>Web Developer</span></li>
+            <li><span>Mobile Developer</span></li>
+            <li><span>Digital Marketer</span></li>
+            <li><span>Designer UI</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- This is about myself part -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/pic1.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Insightful Software Developer who is willing to work on a
+              challenging environment in software development so that I will
+              improve my skills and get experienced on critical skills. Seeking
+              to get an employment so that I can apply my knowledge and skills
+              in programming and bringing solutions to problems as well as to
+              share my knoledge in Digital Marketing
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web application</span><br />By using Java EE<br />
+                  Python and Django frameworks
+                </li>
+                <li><span>Databases</span><br />Myspl, Firebase</li>
+                <li>
+                  <span>Front-End</span><br />React JS, Html, CSS, Bootstrap
+                </li>
+                <li>
+                  <span>Git</span><br />Best tool for all software developers to
+                  share the ideas and knowledges
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span>6 months internship </span><br />Doing Pyhton and Django
+                  including Digital marketing
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>High School</span><br />Tupendane Institute/ DR Congo
+                </li>
+                <li>
+                  <span>Diploma in Computer Science</span><br />Tshwane
+                  University of Technology
+                </li>
+                <li>
+                  <span>Digital Marketing</span><br />Great Learning (Still
+                  completing)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is services part -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Developing the Web design and user interfaces for web applications
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Software Engineering</h2>
+            <p>
+              Developing Web application using several programming languages
+              learnt so far such Python, Django frameworks, Java Entreprise
+              Edition(Java EE), React Js, and databases as MySQL, Firebase
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Mobile application</h2>
+            <p>
+              Seeking to learn Flutter and SWIFT, however currently working with
+              Android Studio using Java
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Digital Marketing</h2>
+            <p>
+              The digital marketing is an added subject on which I would like to
+              explore more and seeking to do some projects in it.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is portfolio part -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/pizza.webp" />
+            <div class="layer">
+              <h3>Pizza Shop App</h3>
+              <p>This is online pizza shop, using Java and MySQL database</p>
+              <a href="https://github.com/KIPOKA/PizzaApp.git"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/library.jpeg" />
+            <div class="layer">
+              <h3>Library management system</h3>
+              <p>
+                This is a Python porject and Django administor for database
+                storing and still working on it to improve
+              </p>
+              <a href="https://github.com/KIPOKA/Book-Management.git"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/student.jpeg" />
+            <div class="layer">
+              <h3>Student management system</h3>
+              <p>
+                This is Java EE web application using JSP, GrassFish Server,
+                Servlet, etc.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/portfolio.jpg" />
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p>
+                This is my own portfolio using JavaScript, HTML and CSS as well
+                as the online messaging for real time email
+              </p>
+              <a href="https://github.com/KIPOKA/Finale-portfolio.git"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/KIPOKA" class="btn">
+          See More <i class="fab fa-github"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Contact me -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>ladykipoka@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+27 611 485 364</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/ladis.kipoka">
+                <i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/kipokalady">
+                <i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/l-katabe-7a7623204">
+                <i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/KIPOKA">
+                <i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="images/cv.pdf" download class="btn"
+              ><i class="fa-solid fa-download"></i> Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form
+              action="https://getform.io/f/d030d418-bf31-43e3-8b25-f7c2eb9b149f"
+              method="POST"
+            >
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">
+                Submit <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright © Katabe. Made by Katabe<br />
+          Software developer
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontent = document.getElementsByClassName("tab-content");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabs of tabcontent) {
+          tabs.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var sidemenu = document.getElementById("menuId");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "images/sun.png";
+        } else {
+          icon.src = "images/moon.png";
+        }
+      };
+    </script>
+    <!-- form submit -->
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz3VjPhHrM1SAxK3DsbB_gYZZk4ouI93zNRyvTxpFnIZnkANMS8QD-Q1qaNvzDp2fphxg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTM = "Message has been successfully sent!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <!--  -->
+  </body>
+</html>
