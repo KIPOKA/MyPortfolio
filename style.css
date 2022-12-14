@@ -259,8 +259,8 @@ width: 50%;
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 50px;
     margin-top: 50px;
 }
 .work{
@@ -269,9 +269,9 @@ width: 50%;
     overflow: hidden;
 }
 .work img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
     display: block;
     transition: transform 0.3s;
 }
