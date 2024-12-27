@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+
 body {
-  background: #080808;
+  background: #0a192f;
   color: #fff;
   /* background-image: url(images/back.jpeg); */
 }
@@ -26,7 +27,7 @@ body {
   width: 100%;
   height: 60vh;
   /* background-image: url(images/moon.jpg); */
-  background: #080808;
+  background: #0a192f;
   background-size: cover;
   background-position: center;
 }
@@ -38,25 +39,32 @@ html {
   display: flex;
   margin-top: 12%;
 }
+
 .wrapper .static-txt {
   color: var(--primary-color);
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 300; /* Lighter font weight */
+  top: 0;
+  margin-top: 7px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light text shadow for a lighter effect */
 }
+
 .wrapper .dynamic-txts {
   margin-left: 25px;
   line-height: 90px;
   height: 90px;
   overflow: hidden;
 }
+
 .dynamic-txts li {
   list-style: none;
-  color: #b54769;
+  color: #b54769; /* Light color for the text */
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 300; /* Lighter font weight */
   top: 0;
   position: relative;
   animation: slide 12s steps(4) infinite;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light text shadow for a lighter effect */
 }
 
 @keyframes slide {
@@ -75,7 +83,7 @@ html {
   height: 90%;
   width: 100%;
   border-left: 2px solid #b54769;
-  background-color: #080808;
+  background-color: #0a192f;
   animation: typing 3s steps(18) infinite;
 }
 @keyframes typing {
@@ -361,8 +369,8 @@ nav ul li a:hover::after {
   background: #080808;
 }
 .btn2:hover {
-  background: #42bb01;
-  border: 1px solid #42bb01;
+  background: #ff004f;
+  border: 1px solid #ff004f;
 }
 .contact-right form {
   width: 100%;
@@ -412,6 +420,61 @@ nav h1 {
 /* Responsive web */
 nav .fas {
   display: none;
+}
+.skills-container {
+  background: linear-gradient(to right, #0000, #0000);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-grid li {
+  position: relative;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 6px #232323;
+  overflow: hidden; /* Ensures the pseudo-element stays within the border-radius */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* For hover animation */
+}
+
+.skills-grid li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%; /* Adjust height for the opacity effect */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.3s ease;
+}
+
+.skills-grid li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills-grid li:hover::after {
+  opacity: 1; /* Show the gradient on hover */
+}
+
+.skills-grid li img {
+  margin-top: 10px;
+}
+
+.skills-grid li span {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
